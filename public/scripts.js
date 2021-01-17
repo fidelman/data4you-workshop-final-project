@@ -1,47 +1,26 @@
-let sum = 0;
-const valuePlaceholder = document.querySelector(".sum-value");
-const resetButton = document.querySelector(".sum-reset");
-const addButtons = document.querySelectorAll(".product-add");
+let summary = 0;
 
-addButtons.forEach((button) => {
-  button.addEventListener("click", handleAddProduct);
-});
+const buttonReset = document.querySelector(".cart-reset");
+const pricePlaceholder = document.querySelector(".price-number");
+const addToCartButtons = document.querySelectorAll(".add-to-cart");
 
-resetButton.addEventListener("click", handleReset);
+buttonReset.addEventListener("click", handleReset);
 
 function handleReset() {
-  setSumValue(0);
-  updateSumValue(sum);
+  summary = 0;
+  updateDOMValue();
 }
 
-function setSumValue(newValue) {
-  sum = newValue;
+function updateDOMValue() {
+  pricePlaceholder.innerHTML = summary;
 }
 
-function handleAddProduct(e) {
-  const productPrice = Number(e.target.dataset.price);
-  setSumValue(sum + productPrice);
-  updateSumValue(sum);
-}
+addToCartButtons.forEach(function (button) {
+  button.addEventListener("click", handleAddToCart);
+});
 
-function updateSumValue(sum) {
-  const formattedValue = getFormattedSumValue(sum);
-  const value = `${formattedValue} Kč`;
-  valuePlaceholder.innerHTML = value;
-}
-
-function getFormattedSumValue(sum) {
-  const formattedSumValueArrayReversed = [];
-
-  sum
-    .toString()
-    .split("")
-    .reverse()
-    .forEach((item, i) => {
-      if (i > 0 && i % 3 === 0) {
-        formattedSumValueArrayReversed.push(" ");
-      }
-      formattedSumValueArrayReversed.push(item);
-    });
-  return formattedSumValueArrayReversed.reverse().join("");
+function handleAddToCart(e) {
+  const price = +e.target.dataset.price;
+  summary += price;
+  updateDOMValue();
 }

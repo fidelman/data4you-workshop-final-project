@@ -19,74 +19,191 @@
     />
 </head>
 <body>
-  <main class="main">
-    <div class="products">
+  <!-- HEADER -->
+<header class="header">
+  <div class="header-fluent">
+    <div class="logo fab fa-apple"></div>
+  <nav class="main-nav">
+    <ul>
+      <li><a class="main-nav-item" href="#">New</a></li>
+      <li><a class="main-nav-item" href="#">Sale</a></li>
+      <li><a class="main-nav-item" href="#">Catalogue</a></li>
+      <li><a class="main-nav-item" href="#">Smart Home</a></li>
+      <li><a class="main-nav-item" href="#">Accessories</a></li>
+    </ul>
+  </nav>
+  <nav class="extra-nav">
+    <ul>
+      <li>
+        <a class="extra-nav-item" href="#">
+          <span class="extra-nav-item-icon fas fa-search"></span>
+          <span>Search</span>
+        </a>
+      </li>
+      <li>
+        <a class="extra-nav-item" href="#">
+          <span class="extra-nav-item-icon fas fa-user"></span>
+          <span>Log In</span>
+        </a>
+      </li>
+      <li>
+        <a class="extra-nav-item" href="#">
+          <span class="extra-nav-item-icon fas fa-heart"></span>
+          <span>Wishlist</span>
+        </a>
+      </li>
+      <li>
+        <a class="extra-nav-item" href="#">
+          <span class="extra-nav-item-icon fas fa-shopping-bag"></span>
+          <span>Shopping Cart</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  </div>
+</header>
+<!-- MAIN -->
+<main class="main">
+  <div class="main-fluent">
+    <h1 class="h1">Apple Products</h1>
+    <p class="perex">Discover the innovative world of Apple and shop Airpods, iPhone, iPad, Apple Watch, 
+Mac and many more of the Apple products</p>
+<!--   PRODUCTS -->
+  <ul class="products">
+<!--     Apple Watch -->
+    <li>
       <div class="product">
-        <div class="product-header">
-          <div class="brand-logo"><i class="fab fa-apple"></i></div>
-          <div class="stock-availability">In Stock</div>
+        <div class="product-image">
+          <img src="./assets/watch.png" alt="Apple Watch">
         </div>
-        <div class="product-image-container"><img src="./asstets/airpods.png" alt="Airpods Pro" class="product-image"></div>
-        <div class="product-detail">
-          <p class="product-name">Airpods Pro</p>
-          <p class="product-description">Wireless Noise Cancelling Earphones</p>
-          <div class="product-detail-footer">
-            <p class="product-price">Kč 7290</p>
-            <button  data-price="7290" class="product-add">Add <i class="fas fa-chevron-right"></i></button>
-          </div>
-        </div>
-      </div>
-      <div class="product">
-        <div class="product-header">
-          <div class="brand-logo"><i class="fab fa-apple"></i></div>
-          <div class="stock-availability">In Stock</div>
-        </div>
-        <div class="product-image-container"><img src="./asstets/watch.png" alt="Apple Watch" class="product-image"></div>
         <div class="product-detail">
           <p class="product-name">Apple Watch</p>
-          <p class="product-description">You’ve never seen a watch like this</p>
-          <div class="product-detail-footer">
-            <p class="product-price">Kč 11690</p>
-            <button  data-price="11690" class="product-add">Add <i class="fas fa-chevron-right"></i></button>
+          <p class="product-description">You’ve never seen a watch like this!You’ve never seen a watch like this!</p>
+          <div class="product-actions">
+            <span class="product-price">11690 Kč</span>
+            <button data-price="11690" class="button add-to-cart">Add</button>
           </div>
         </div>
       </div>
+    </li>
+<!--     MacBook Pro -->
+    <li>
       <div class="product">
-        <div class="product-header">
-          <div class="brand-logo"><i class="fab fa-apple"></i></div>
-          <div class="stock-availability">In Stock</div>
+        <div class="product-image">
+          <img src="./assets/macbook.png" alt="MacBook Pro">
         </div>
-        <div class="product-image-container"><img src="./asstets/macbook.png" alt="MacBook pro" class="product-image"></div>
         <div class="product-detail">
-          <p class="product-name">MacBook pro</p>
-          <p class="product-description">The best for the brightest</p>
-          <div class="product-detail-footer">
-            <p class="product-price">Kč 38990</p>
-            <button data-price="38990" class="product-add">Add <i class="fas fa-chevron-right"></i></button>
+          <p class="product-name">MacBook Pro</p>
+          <p class="product-description">You’ve never seen a watch like this!You’ve never seen a watch like this!</p>
+          <div class="product-actions">
+            <span class="product-price">11690 Kč</span>
+            <button data-price="11690" class="button add-to-cart">Add</button>
           </div>
         </div>
       </div>
+    </li>
+<!--     IPhone 11 Pro -->
+    <li>
       <div class="product">
-        <div class="product-header">
-          <div class="brand-logo"><i class="fab fa-apple"></i></div>
-          <div class="stock-availability">In Stock</div>
+        <div class="product-image">
+          <img src="./assets/iphone.png" alt="IPhone 11 Pro">
         </div>
-        <div class="product-image-container"><img src="./asstets/iphone.png" alt="iPhone 11 pro" class="product-image"></div>
         <div class="product-detail">
-          <p class="product-name">iPhone 11 pro</p>
-          <p class="product-description">Pro cameras. Pro display. Pro performance</p>
-          <div class="product-detail-footer">
-            <p class="product-price">Kč 29990</p>
-            <button data-price="29990" class="product-add">Add <i class="fas fa-chevron-right"></i></button>
+          <p class="product-name">IPhone 11 Pro</p>
+          <p class="product-description">You’ve never seen a watch like this!You’ve never seen a watch like this!</p>
+          <div class="product-actions">
+            <span class="product-price">11690 Kč</span>
+            <button data-price="11690" class="button add-to-cart">Add</button>
           </div>
         </div>
       </div>
+    </li>
+ <!--     Airpods Pro -->
+    <li>
+      <div class="product">
+        <div class="product-image">
+          <img src="./assets/airpods.png" alt="Airpods Pro">
+        </div>
+        <div class="product-detail">
+          <p class="product-name">Airpods Pro</p>
+          <p class="product-description">You’ve never seen a watch like this!You’ve never seen a watch like this!</p>
+          <div class="product-actions">
+            <span class="product-price">11690 Kč</span>
+            <button data-price="11690" class="button add-to-cart">Add</button>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  
+<!--   Cart -->
+  <div class="cart">
+    <div class="cart-price">
+      <span class="price-label">Total</span>
+      <span class="price-value"><span class="price-number">0</span> Kč</span>
     </div>
-    <div class="sum">
-      <p class="sum-value">0 Kč</p>
-      <button class="sum-reset">Reset</button>
+    <div class="cart-actions">
+      <button class="cart-reset button button-secondary">Reset <i class="fas fa-undo-alt"></i></button>
+      <button class="cart-checkout button">Checkout</button>
     </div>
-  </main>
+  </div>
+  </div>
+  
+</main>
+<!-- FOOTER -->
+<footer class="footer">
+  <ul class="footer-fluid">
+    <li>
+      <div class="footer-logo fab fa-apple"></div>
+    </li>
+    <li>
+      <div>
+        <h3 class="footer-title">Products</h3>
+        <ul class="footer-nav">
+          <li><a href="#" class="footer-link">New</a></li>
+          <li><a href="#" class="footer-link">Sale</a></li>
+          <li><a href="#" class="footer-link">Catalogue</a></li>
+          <li><a href="#" class="footer-link">Smart Home</a></li>
+          <li><a href="#" class="footer-link">Accessories</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3 class="footer-title">Information</h3>
+        <ul class="footer-nav">
+          <li><a href="#" class="footer-link">Shipping policy</a></li>
+          <li><a href="#" class="footer-link">Refund policy</a></li>
+          <li><a href="#" class="footer-link">Privacy policy</a></li>
+          <li><a href="#" class="footer-link">Terms of service</a></li>
+          <li><a href="#" class="footer-link">About Us</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3 class="footer-title">Contacts</h3>
+        <ul class="footer-contacts-nav">
+          <li><a href="mailto:hello@appleshop.com" class="footer-action-link">hello@appleshop.com</a></li>
+          <li><a class="footer-action-link" href="tel:+420777777777">+420 777 777 777</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3 class="footer-title">Follow Us</h3>
+        <ul>
+          <li class="footer-socials">
+            <a href="#" class="footer-social-icon fab fa-twitter"></a>
+            <a href="#" class="footer-social-icon fab fa-instagram"></a>
+            <a href="#" class="footer-social-icon fab fa-facebook-square"></a>
+          </li>
+        </ul>
+        <p class="footer-text">We Work All the Holidays</p>
+      </div>
+    </li>
+  </ul>
+</footer>
   <script src="./scripts.js"></script>
 </body>
 </html>
