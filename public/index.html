@@ -53,9 +53,10 @@
         </a>
       </li>
       <li>
-        <a class="extra-nav-item" href="#">
+        <a class="extra-nav-item my-cart" href="#">
           <span class="extra-nav-item-icon fas fa-shopping-bag"></span>
           <span>Shopping Cart</span>
+          <div class="extra-nav-item-cart-badge">0</div>
         </a>
       </li>
     </ul>
@@ -80,8 +81,8 @@ Mac and many more of the Apple products</p>
           <p class="product-name">Apple Watch</p>
           <p class="product-description">You’ve never seen a watch like this!You’ve never seen a watch like this!</p>
           <div class="product-actions">
-            <span class="product-price">11690 Kč</span>
-            <button data-price="11690" class="button add-to-cart">Add</button>
+            <span class="product-price">10800 Kč</span>
+            <button data-id="id:1" class="button add-to-cart">Add</button>
           </div>
         </div>
       </div>
@@ -96,8 +97,8 @@ Mac and many more of the Apple products</p>
           <p class="product-name">MacBook Pro</p>
           <p class="product-description">You’ve never seen a watch like this!You’ve never seen a watch like this!</p>
           <div class="product-actions">
-            <span class="product-price">11690 Kč</span>
-            <button data-price="11690" class="button add-to-cart">Add</button>
+            <span class="product-price">38300 Kč</span>
+            <button data-id="id:2" class="button add-to-cart">Add</button>
           </div>
         </div>
       </div>
@@ -112,8 +113,8 @@ Mac and many more of the Apple products</p>
           <p class="product-name">IPhone 11 Pro</p>
           <p class="product-description">You’ve never seen a watch like this!You’ve never seen a watch like this!</p>
           <div class="product-actions">
-            <span class="product-price">11690 Kč</span>
-            <button data-price="11690" class="button add-to-cart">Add</button>
+            <span class="product-price">21200 Kč</span>
+            <button data-id="id:3" class="button add-to-cart">Add</button>
           </div>
         </div>
       </div>
@@ -128,26 +129,13 @@ Mac and many more of the Apple products</p>
           <p class="product-name">Airpods Pro</p>
           <p class="product-description">You’ve never seen a watch like this!You’ve never seen a watch like this!</p>
           <div class="product-actions">
-            <span class="product-price">11690 Kč</span>
-            <button data-price="11690" class="button add-to-cart">Add</button>
+            <span class="product-price">5600 Kč</span>
+            <button data-id="id:4" class="button add-to-cart">Add</button>
           </div>
         </div>
       </div>
     </li>
   </ul>
-  
-<!--   Cart -->
-  <div class="cart">
-    <div class="cart-price">
-      <span class="price-label">Total</span>
-      <span class="price-value"><span class="price-number">0</span> Kč</span>
-    </div>
-    <div class="cart-actions">
-      <button class="cart-reset button button-secondary">Reset <i class="fas fa-undo-alt"></i></button>
-      <button class="cart-checkout button">Checkout</button>
-    </div>
-  </div>
-  </div>
   
 </main>
 <!-- FOOTER -->
@@ -204,6 +192,60 @@ Mac and many more of the Apple products</p>
     </li>
   </ul>
 </footer>
-  <script src="./scripts.js"></script>
+
+<div class="cart-container">
+  <div class="cart-header">
+    <div class="cart-title">Cart</div>
+    <button class="cart-close fas fa-times"></button>
+  </div>
+  <div class="cart-items"></div>
+  <!-- <div class="cart-items">
+    <div class="cart-item">
+      <img width="50" src="./assets/watch.png" alt="Apple Watch">
+      <div class="cart-item-content">
+        <h4 class="cart-item-title">Apple Watch</h4>
+        <p class="cart-item-perex">
+          <span class="cart-item-price">23380 Kč</span>
+          –
+          <span class="cart-item-sum">2 x 11690 Kč each</span>
+        </p>
+      </div>
+      <button class="cart-item-remove fas fa-times"></button>
+    </div>
+    <div class="cart-item">
+      <img width="50" src="./assets/watch.png" alt="Apple Watch">
+      <div class="cart-item-content">
+        <h4 class="cart-item-title">Apple Watch</h4>
+        <p class="cart-item-perex">
+          <span class="cart-item-price">23380 Kč</span>
+          –
+          <span class="cart-item-sum">2 x 11690 Kč each</span>
+        </p>
+      </div>
+      <button class="cart-item-remove fas fa-times"></button>
+    </div>
+    <div class="cart-item">
+      <img width="50" src="./assets/watch.png" alt="Apple Watch">
+      <div class="cart-item-content">
+        <h4 class="cart-item-title">Apple Watch</h4>
+        <p class="cart-item-perex">
+          <span class="cart-item-price">23380 Kč</span>
+          –
+          <span class="cart-item-sum">2 x 11690 Kč each</span>
+        </p>
+      </div>
+      <button class="cart-item-remove fas fa-times"></button>
+    </div>
+  </div> -->
+  <div class="cart-footer">
+    <div class="cart-footer-lines">
+      <div class="cart-footer-line"></div>
+      <div class="cart-footer-line"></div>
+    </div>
+    <div class="cart-sum">0 Kč</div>
+  </div>
+</div>
+
+<script src="./scripts.js"></script>
 </body>
 </html>
